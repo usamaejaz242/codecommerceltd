@@ -1,6 +1,6 @@
-# Paths to the uploaded files
-bootstrap_path = "bootstrap__.css"
-style_path = "style__.css"
+# Paths for the uploaded files
+bootstrap_path = r"D:\USAMA\Others\codecommerceltd\aaa\bootstrap_660000.css"
+style_path = r"D:\USAMA\Others\codecommerceltd\aaa\style_660000.css"
 
 # Reading the files
 with open(bootstrap_path, "r") as bootstrap_file:
@@ -9,22 +9,24 @@ with open(bootstrap_path, "r") as bootstrap_file:
 with open(style_path, "r") as style_file:
     style_content = style_file.read()
 
-# # Replacing purple-related color codes with black (#000000)
-# bootstrap_modified = bootstrap_content.replace("#6f42c1", "#000000")
-# style_modified = style_content.replace("#7335b7", "#000000").replace("#5a2a8f", "#000000")
+# professional_color = "#2E2E2E"
+professional_color = "#013220"  # Dark Forest Green
+# professional_color = "#2B2D42"  # Dark Charcoal
 
-bootstrap_330000_modified = bootstrap_content.replace("#660000", "#330000")
-style_330000_modified = style_content.replace("#660000", "#330000")
 
-# Paths for files with #330000 color
-bootstrap_330000_path = "bootstrap_330000.css"
-style_330000_path = "style_330000.css"
+# Replace all instances of #660000 with the professional color
+bootstrap_updated = bootstrap_content.replace("#660000", professional_color)
+style_updated = style_content.replace("#660000", professional_color)
 
-# Writing the #330000-modified content to new files
-with open(bootstrap_330000_path, "w") as bootstrap_file:
-    bootstrap_file.write(bootstrap_330000_modified)
+# Paths for the modified files
+bootstrap_modified_path = r"D:\USAMA\Others\codecommerceltd\css\bootstrap.css"
+style_modified_path = r"D:\USAMA\Others\codecommerceltd\css\style.css"
 
-with open(style_330000_path, "w") as style_file:
-    style_file.write(style_330000_modified)
+# Writing the updated content to new files
+with open(bootstrap_modified_path, "w") as bootstrap_file:
+    bootstrap_file.write(bootstrap_updated)
 
-bootstrap_330000_path, style_330000_path
+with open(style_modified_path, "w") as style_file:
+    style_file.write(style_updated)
+
+bootstrap_modified_path, style_modified_path
