@@ -26,6 +26,13 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <script>
+  function handleSubmit(event) {
+    event.preventDefault(); // Prevent form from refreshing the page
+    alert("Your request has been submitted successfully!");
+    window.location.href = "index.html"; // Redirect to index.html
+  }
+  </script>
 </head>
 
 <body>
@@ -386,7 +393,7 @@
               <div class="col-md-10 mx-auto">
                 <div class="box">
                   <div class="img-box">
-                    <img src="images/client.jpg" alt="">
+<!--                    <img src="images/client.jpg" alt="">-->
                   </div>
                   <div class="detail-box">
                     <div class="client_info">
@@ -495,7 +502,7 @@
                 Request A Call back
               </h2>
             </div>
-            <form action="">
+            <form onsubmit="handleSubmit(event)">
               <div>
                 <input type="text" placeholder="Full Name " />
               </div>
@@ -580,43 +587,43 @@
           <div class="col-md-6 col-lg-3 mb-0 ml-auto">
             <div class="info_contact">
               <h4>
-                Address
+                Email
               </h4>
               <div class="contact_link_box">
-                <a href="https://maps.app.goo.gl/gCTP6KRVTCtGePTA9">
-                  <i class="fa fa-map-marker" aria-hidden="true"></i>
-                  <span>
-                    Location
-                  </span>
+<!--                <a href="https://maps.app.goo.gl/gCTP6KRVTCtGePTA9">-->
+<!--                  <i class="fa fa-map-marker" aria-hidden="true"></i>-->
+<!--                  <span>-->
+<!--                    Location-->
+<!--                  </span>-->
                 </a>
 <!--                <a href="">-->
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-                  <span>
-                    Call +92 0900 78601
-                  </span>
+<!--                  <i class="fa fa-phone" aria-hidden="true"></i>-->
+<!--                  <span>-->
+<!--                    Call +44 -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<!--                  </span>-->
                 </a>
 <!--                <a href="">-->
-                  <i class="fa fa-envelope" aria-hidden="true"></i>
+<!--                  <i class="fa fa-envelope" aria-hidden="true"></i>-->
                   <span>
                     support@codecommerceltd.com
                   </span>
                 </a>
               </div>
             </div>
-            <div class="info_social">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-            </div>
+<!--            <div class="info_social">-->
+<!--              <a href="">-->
+<!--                <i class="fa fa-facebook" aria-hidden="true"></i>-->
+<!--              </a>-->
+<!--              <a href="">-->
+<!--                <i class="fa fa-twitter" aria-hidden="true"></i>-->
+<!--              </a>-->
+<!--              <a href="">-->
+<!--                <i class="fa fa-linkedin" aria-hidden="true"></i>-->
+<!--              </a>-->
+<!--              <a href="">-->
+<!--                <i class="fa fa-instagram" aria-hidden="true"></i>-->
+<!--              </a>-->
+<!--            </div>-->
           </div>
         </div>
       </div>
